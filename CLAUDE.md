@@ -9,6 +9,7 @@
 2. `shared/running-example.md` — 通し課題の確定仕様。第2部の各Phase章の例は必ずこれに接続する（第1部・第3部・第4部・第5部・第0部・第6部のような横断的な章は接続を必須としないが、例を使う場合は別の題材を持ち出さずこれを使う）
 3. `shared/phases.md` — Phase 0〜8 の正式な定義。フェーズの内容はここが唯一の正
 4. `shared/glossary-registry.md` — 用語の初出管理表
+5. `.claude/PROGRESS.md` — 前回までの進捗と、次にやることの引き継ぎメモ。読者向けではない
 
 章を書くときは `.claude/skills/guidebook-writing/SKILL.md` に従う。
 
@@ -28,7 +29,8 @@
 - 章を書いたら `python scripts/check.py` を実行し、指摘をすべて潰してから終える
 - 用語を初出で説明したら `shared/glossary-registry.md` に追記する。忘れると後続章で重複する
 - 通し課題の仕様を変えたら `shared/running-example.md` を先に更新する。原稿から先に変えない
-- 付録AとBは手書きしない。`python scripts/build_appendix.py` で各章から生成する
+- 付録A・B・Cは手書きしない。`python scripts/build_appendix.py` で各章から生成する
+- 作業を終えるときは `.claude/PROGRESS.md` を更新する。次のセッションがここだけ読めば続きに着手できる状態にする
 
 ## やらないこと
 
