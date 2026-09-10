@@ -49,7 +49,7 @@
   - `books`：id、user_id、title、author、review、finished_on、status（未読／読書中／読了）、created_at
   - `books.user_id` は `users.id` を参照する（自分の本だけが見える、の根拠になる）
 
-- **技術スタック**：Node.js + Express + SQLite（better-sqlite3）。認証はセッションベース（express-session）、パスワードは bcrypt でハッシュ化。画面は EJS テンプレート
+- **技術スタック**：Node.js + Express + SQLite（better-sqlite3）。認証はセッションベース（express-session）、パスワードは bcrypt でハッシュ化。画面は EJS テンプレート。環境変数は dotenv で読み込む（`.env` の値は自動では読み込まれないため）
 
 - **例示コードの言語**：JavaScript（Node.js）（手順は言語非依存だが、例は本書全体でこの1言語に固定する）
 
